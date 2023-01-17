@@ -1,0 +1,120 @@
+{
+  "Disease name": "Z-Virus",
+  "Description": "Incurable disease that causes the need... to feed.",
+  "Min time immune after recovery (seconds)": 10,
+  "Max time immune after recovery (seconds)": 11,
+  "Min time infected (seconds)": 900,
+  "Max time infected (seconds)": 1000,
+  "Min time between symptoms (seconds)": 15,
+  "Max time between symptoms (seconds)": 30,
+  "Spread distance (4.0 = 1 foundation)": 0.0,
+  "Spread chance with mask (0-100)": 0.0,
+  "Spread chance without mask (0-100)": 0.0,
+  "Symptom damage effects": [
+    {
+      "Stat name": "health",
+      "Min damage": 1.0,
+      "Max damage": 5.0
+    },
+    {
+      "Stat name": "calories",
+      "Min damage": 25.0,
+      "Max damage": 35.0
+    },
+    {
+      "Stat name": "hydration",
+      "Min damage": 35.0,
+      "Max damage": 55.0
+    }
+  ],
+  "Items that cause infection on consumption": [
+    {
+      "Infection chance on consumption (0-100)": 0.0,
+      "Short prefab name": "chicken.raw"
+    },
+    {
+      "Infection chance on consumption (0-100)": 0.0,
+      "Short prefab name": "chicken.spoiled"
+    },
+    {
+      "Infection chance on consumption (0-100)": 50.0,
+      "Short prefab name": "humanmeat.raw"
+    },
+    {
+      "Infection chance on consumption (0-100)": 85.0,
+      "Short prefab name": "humanmeat.spoiled"
+    }
+  ],
+  "Items that cure on consumption": [
+    {
+      "Cure chance on consumption (0-100)": 50.0,
+      "Short prefab name": "antiradpills"
+    }
+  ],
+  "Items that reduce infection time on consumption": [
+    {
+      "Min infection time decreased (seconds)": 30,
+      "Max infection time decreased (seconds)": 30,
+      "Delay between reusing treament (seconds)": 30,
+      "Short prefab name": "healingtea"
+    },
+    {
+      "Min infection time decreased (seconds)": 60,
+      "Max infection time decreased (seconds)": 60,
+      "Delay between reusing treament (seconds)": 60,
+      "Short prefab name": "healingtea.advanced"
+    },
+    {
+      "Min infection time decreased (seconds)": 120,
+      "Max infection time decreased (seconds)": 120,
+      "Delay between reusing treament (seconds)": 120,
+      "Short prefab name": "healingtea.pure"
+    }
+  ],
+  "Entities that cause infection on hit": [
+    {
+      "Short prefab name": "scientistnpc_heavy",
+      "Infection chance on hit (0-100)": 100.0
+    }
+  ],
+  "Random outbreak settings": {
+    "Outbreaks enabled": false,
+    "Outbreak chance (0-100)": 0.0,
+    "Time interval (seconds)": 300,
+    "Only outbreak on players with the following stats": [
+      {
+        "Stat name": "health",
+        "Min value": 101.0,
+        "Max value": 105.0
+      }
+    ]
+  },
+  "Symptom effects": [
+    {
+      "Asset path": "assets/bundled/prefabs/fx/gestures/drink_vomit.prefab",
+      "Local only": false
+    },
+    {
+      "Asset path": "assets/bundled/prefabs/fx/water/midair_splash.prefab",
+      "Local only": false
+    },
+    {
+      "Asset path": "assets/prefabs/weapons/cake/effects/strike_screenshake.prefab",
+      "Local only": true
+    }
+  ],
+  "Symptom screen effects": [
+    {
+      "Sprite asset path": "assets/content/ui/overlay_poisoned.png",
+      "Opacity (0-1.0)": 0.3,
+      "Duration (seconds)": 15.0,
+      "Fade out (seconds)": 1.0,
+      "Material asset path (optional)": ""
+    }
+  ],
+  "Version": {
+    "Major": 2,
+    "Minor": 1,
+    "Patch": 0
+  }
+}
